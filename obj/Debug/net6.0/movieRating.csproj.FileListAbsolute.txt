@@ -1,0 +1,16 @@
+D:\Documents\Repos\movieRating\movieRating\bin\Debug\net6.0\movieRating.exe
+D:\Documents\Repos\movieRating\movieRating\bin\Debug\net6.0\movieRating.deps.json
+D:\Documents\Repos\movieRating\movieRating\bin\Debug\net6.0\movieRating.runtimeconfig.json
+D:\Documents\Repos\movieRating\movieRating\bin\Debug\net6.0\movieRating.dll
+D:\Documents\Repos\movieRating\movieRating\bin\Debug\net6.0\ref\movieRating.dll
+D:\Documents\Repos\movieRating\movieRating\bin\Debug\net6.0\movieRating.pdb
+D:\Documents\Repos\movieRating\movieRating\obj\Debug\net6.0\movieRating.GlobalUsings.g.cs
+D:\Documents\Repos\movieRating\movieRating\obj\Debug\net6.0\movieRating.csproj.AssemblyReference.cache
+D:\Documents\Repos\movieRating\movieRating\obj\Debug\net6.0\movieRating.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Repos\movieRating\movieRating\obj\Debug\net6.0\movieRating.AssemblyInfoInputs.cache
+D:\Documents\Repos\movieRating\movieRating\obj\Debug\net6.0\movieRating.AssemblyInfo.cs
+D:\Documents\Repos\movieRating\movieRating\obj\Debug\net6.0\movieRating.csproj.CoreCompileInputs.cache
+D:\Documents\Repos\movieRating\movieRating\obj\Debug\net6.0\movieRating.dll
+D:\Documents\Repos\movieRating\movieRating\obj\Debug\net6.0\ref\movieRating.dll
+D:\Documents\Repos\movieRating\movieRating\obj\Debug\net6.0\movieRating.pdb
+D:\Documents\Repos\movieRating\movieRating\obj\Debug\net6.0\movieRating.genruntimeconfig.cache
