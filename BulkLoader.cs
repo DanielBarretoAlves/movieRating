@@ -54,35 +54,10 @@ namespace MyApp
                         data[j] = temp;
                     }
                 }
-                // Console.Write("{0} ", data[i]);
             }
             return data;
         }
-        // public String[] readFile2(string path, int escolha)
-        // {
-        //     long size = getFileSize(path);
-        //     int[] data = new int[size];
-        //     int temp = 0;
-        //     using (var reader = new StreamReader(path))
-        //     {
-
-        //         for (int write = 0; write < data.Length; write++)
-        //         {
-        //             for (int sort = 0; sort < data.Length - 1; sort++)
-        //             {
-        //                 if (data[sort] > data[sort + 1])
-        //                 {
-        //                     temp = data[sort + 1];
-        //                     data[sort + 1] = data[sort];
-        //                     data[sort] = temp;
-        //                 }
-        //             }
-        //         }
-
-
-        //     }
-        //     return data;
-        // }
+        
 
 
 
