@@ -19,10 +19,12 @@ namespace MyApp
                 Console.WriteLine("Select Movie ID:");
                 Console.WriteLine("Ex: '5' Heat (1995)");
                 Console.WriteLine("******************************************");
+                Console.Write(": ");
                 escolha = int.Parse(Console.ReadLine());
                 Console.WriteLine("Is this the Movie? " + title[escolha]);
                 Console.WriteLine("1 - Yes");
                 Console.WriteLine("2 - No");
+                Console.Write(": ");
                 int choice = int.Parse(Console.ReadLine());
                 if (choice == 1)
                 {
@@ -55,7 +57,7 @@ namespace MyApp
             int[] mlsec = bulk.readFileInt(path1, 3);
             string[] title = bulk.readFileString(path2, 1);
             stopwatch.Stop();
-            Console.WriteLine("Load Files Complete! "+stopwatch.Elapsed+" Seconds!");
+            Console.WriteLine("Load Files Complete! | "+stopwatch.Elapsed+" Seconds!");
 
             stopwatch.Restart();
             Console.WriteLine("Sorting Data..");
@@ -89,7 +91,7 @@ namespace MyApp
                 }
             }
             stopwatch.Stop();
-            Console.WriteLine("Data Sorted Successfully! "+stopwatch.Elapsed+" Seconds!");
+            Console.WriteLine("Data Sorted Successfully! | "+stopwatch.Elapsed+" Seconds!");
 
 
 
@@ -119,7 +121,7 @@ namespace MyApp
 
             }
             stopwatch.Stop();
-            Console.WriteLine(qtd + " Reviews Found! " + stopwatch.Elapsed+ " Secconds!");
+            Console.WriteLine(qtd + " Reviews Found! | " + stopwatch.Elapsed+ " Secconds!");
             Console.WriteLine("===========================================");
             float some = notas/qtd;
             Console.WriteLine("Avarage Review for the movie:  - " + some);

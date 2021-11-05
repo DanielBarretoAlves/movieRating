@@ -72,42 +72,6 @@ namespace MyApp
         }
 
 
-
-        public int[]bubble(int[] data)
-        {
-
-            int temp = 0;
-
-            for (int i = 0; i < data.Length; i++)
-            {
-                for (int j = 0; j < data.Length - 1; j++)
-                {
-                    if (data[j] > data[j + 1])
-                    {
-                        temp = data[j + 1];
-                        data[j + 1] = data[j];
-                        data[j] = temp;
-                    }
-                }
-            }
-            return data;
-        }
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
 }
