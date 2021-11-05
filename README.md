@@ -6,6 +6,7 @@ Just insert your Review Data, and your movies list and its done simple and easy!
 *This is an Academic Project*
 
 ## Goals
-* Read a Large CSV File
-* Sort a Large Dataset
-* Search in a Large Datset
+- [x] Read a Large CSV File
+- [x] Sort a Large Dataset
+- [x] Search in a Large Datset
+##
