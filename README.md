@@ -9,4 +9,6 @@ Just insert your Review Data, and your movies list and its done simple and easy!
 - [x] Read a Large CSV File
 - [x] Sort a Large Dataset
 - [x] Search in a Large Datset
-##
+## Specifications
+The entire code was entire builded in C# for console application without 3rd party frameworks
+The Data used came from https://movielens.org/
