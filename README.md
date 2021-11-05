@@ -16,4 +16,4 @@ The Data used came from https://movielens.org/
 * Get your csv reviews file and insert in */input/*
 * Get your csv movie list file and insert in */input/*
 * Get the code and change the paths strings to your file
-![Path](img\path.png)
+![Path](https://github.com/DanielBarretoAlves/movieRating/blob/main/img/path.png?raw=true)
