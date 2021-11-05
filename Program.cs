@@ -97,7 +97,7 @@ namespace MyApp
 
             int escolha = menu(title);
 
-            //Adaptar para Rodar em Array
+            //Percorrer Array para encontrar e calcular todas reviews
             float notas = 0;
             int qtd = 0;
             if (escolha != 0)
