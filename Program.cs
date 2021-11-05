@@ -57,26 +57,30 @@ namespace MyApp // Note: actual namespace depends on the project name.
             Console.WriteLine("escolha fora do loop"+escolha);
             float notas = 0;
             int qtd =0;
+            
+            //Adaptar para Rodar em Array
+            if (escolha != 0)
+            {
+                escolha--;
+            }
+            int test = escolha;
+            Console.WriteLine("--------------------------------------------Escolha fora do lopp: "+escolha);
             for (int i = 0; i < rMovieID.Length; i++)
             {
-                // Console.WriteLine("Entrou no Loop");
-                // Console.WriteLine("escolha dentro do loop"+escolha);
-                if (rMovieID[i] == movieId[escolha-1])
+
+                if (rMovieID[i] == movieId[test])
                 {
-                    Console.WriteLine("escolha dentro do if"+escolha);
+                    escolha = test;
+                    Console.WriteLine("escolha dentro do if: "+escolha);
                     notas+=rating[i];
                     qtd++;
-                    Console.WriteLine("-- "+rMovieID[i]);
-                    Console.WriteLine("---"+movieId[escolha]);
-                    Console.WriteLine("-- "+rating[i]);
-                    Console.WriteLine(title[rMovieID[i]]);
-                    Console.WriteLine("escolhido: " + title[movieId[escolha]]);
-                    Console.WriteLine("movie: "+ movieId[i]+" - rMovie: "+rMovieID[i]);
+                    
                 }
                 
             }
-            Console.WriteLine("Media de Notas Para o Filme: "+title[2]+" - "+notas/qtd);
+            Console.WriteLine("Media de Notas Para o Filme: "+title[escolha]+" - "+notas/qtd);
             Console.WriteLine("- "+rMovieID[145]);
+            Console.WriteLine("Title: "+title[0]);
 
 
             

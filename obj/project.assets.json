@@ -8,23 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\danie\\.nuget\\packages\\": {},
+    "C:\\Users\\Work\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\Repos\\movieRating\\movieRating\\movieRating.csproj",
+      "projectUniqueName": "D:\\Documents\\Repos\\Clone\\movieRating\\movieRating\\movieRating.csproj",
       "projectName": "movieRating",
-      "projectPath": "D:\\Documents\\Repos\\movieRating\\movieRating\\movieRating.csproj",
-      "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\Repos\\movieRating\\movieRating\\obj\\",
+      "projectPath": "D:\\Documents\\Repos\\Clone\\movieRating\\movieRating\\movieRating.csproj",
+      "packagesPath": "C:\\Users\\Work\\.nuget\\packages\\",
+      "outputPath": "D:\\Documents\\Repos\\Clone\\movieRating\\movieRating\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Work\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
