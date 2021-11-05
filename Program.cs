@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 
 namespace MyApp
@@ -39,25 +40,27 @@ namespace MyApp
 
         public static void Main(string[] args)
         {
+            Stopwatch stopwatch = new Stopwatch(); 
             Bulkloader bulk = new Bulkloader();
             //Call Path Files
             string path1 = @"input\ratingsF1.csv";
             string path2 = @"input\movies.csv";
 
             // Get Data From CSV Files
+            stopwatch.Start();
             Console.WriteLine("Loading Files..");
             int[] rMovieID = bulk.readFileInt(path1, 1);
             float[] rating = bulk.readFileFloat(path1, 2);
             int[] movieId = bulk.readFileInt(path2, 0);
             int[] mlsec = bulk.readFileInt(path1, 3);
             string[] title = bulk.readFileString(path2, 1);
-            Console.WriteLine("Load Files Complete!");
+            stopwatch.Stop();
+            Console.WriteLine("Load Files Complete! "+stopwatch.Elapsed+" Seconds!");
 
-
+            stopwatch.Restart();
             Console.WriteLine("Sorting Data..");
 
-
-            //sELECTION sort -------------------------------------------------------
+            //Selection sort -------------------------------------------------------
             int min, aux;
             float auxRating;
             int auxmlSec;
@@ -85,7 +88,8 @@ namespace MyApp
                     mlsec[i] = auxmlSec;
                 }
             }
-            Console.WriteLine("Data Sorted Successfully!");
+            stopwatch.Stop();
+            Console.WriteLine("Data Sorted Successfully! "+stopwatch.Elapsed+" Seconds!");
 
 
 
@@ -101,6 +105,7 @@ namespace MyApp
             int test = escolha;
 
             Console.WriteLine("Calc Reviews..");
+            stopwatch.Restart();
             for (int i = 0; i < rMovieID.Length; i++)
             {
 
@@ -113,7 +118,8 @@ namespace MyApp
                 }
 
             }
-            Console.WriteLine(qtd + " Reviews Found!");
+            stopwatch.Stop();
+            Console.WriteLine(qtd + " Reviews Found! " + stopwatch.Elapsed+ " Secconds!");
             Console.WriteLine("===========================================");
             float some = notas/qtd;
             Console.WriteLine("Avarage Review for the movie:  - " + some);
