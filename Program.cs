@@ -124,7 +124,7 @@ namespace MyApp
             Console.WriteLine(qtd + " Reviews Found! | " + stopwatch.Elapsed+ " Secconds!");
             Console.WriteLine("===========================================");
             float some = notas/qtd;
-            Console.WriteLine("Avarage Review for the movie:  - " + some);
+            Console.WriteLine("Avarage Review for the movie:  = " + some);
             Console.WriteLine("===========================================");
 
 
