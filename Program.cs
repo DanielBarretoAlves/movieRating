@@ -14,7 +14,10 @@ namespace MyApp
             int escolha = 0;
             while (key != true)
             {
+                Console.WriteLine("******************************************");
                 Console.WriteLine("Select Movie ID:");
+                Console.WriteLine("Ex: '5' Heat (1995)");
+                Console.WriteLine("******************************************");
                 escolha = int.Parse(Console.ReadLine());
                 Console.WriteLine("Is this the Movie? " + title[escolha]);
                 Console.WriteLine("1 - Yes");
@@ -54,31 +57,32 @@ namespace MyApp
             Console.WriteLine("Sorting Data..");
 
 
-            //bubble sort -------------------------------------------------------
-            int temp = 0;
-            int tempSec = 0;
-            float tempRating = 0;
+            //sELECTION sort -------------------------------------------------------
+            int min, aux;
+            float auxRating;
+            int auxmlSec;
 
-            for (int i = 0; i < rMovieID.Length; i++)
+            for (int i = 0; i < rMovieID.Length - 1; i++)
             {
-                for (int j = 0; j < rMovieID.Length - 1; j++)
+                min = i;
+
+                for (int j = i + 1; j < rMovieID.Length; j++)
+                    if (rMovieID[j] < rMovieID[min])
+                        min = j;
+
+                if (min != i)
                 {
-                    if (rMovieID[j] > rMovieID[j + 1])
-                    {
-
-                        temp = rMovieID[j + 1];
-                        rMovieID[j + 1] = rMovieID[j];
-                        rMovieID[j] = temp;
-                        //------------------------
-                        tempRating = rating[j + 1];
-                        rating[j + 1] = rating[j];
-                        rating[j] = tempRating;
-                        //------------------------
-                        tempSec = mlsec[j + 1];
-                        mlsec[j + 1] = mlsec[j];
-                        mlsec[j] = tempSec;
-
-                    }
+                    aux = rMovieID[min];
+                    rMovieID[min] = rMovieID[i];
+                    rMovieID[i] = aux;
+                    //----------------------
+                    auxRating = rating[min];
+                    rating[min] = rMovieID[i];
+                    rating[i] = auxRating;
+                    //----------------------
+                    auxmlSec = mlsec[min];
+                    mlsec[min] = mlsec[i];
+                    mlsec[i] = auxmlSec;
                 }
             }
             Console.WriteLine("Data Sorted Successfully!");
@@ -109,9 +113,10 @@ namespace MyApp
                 }
 
             }
-            Console.WriteLine(qtd + " Review Found");
+            Console.WriteLine(qtd + " Reviews Found!");
             Console.WriteLine("===========================================");
-            Console.WriteLine("Avarage Review for the movie:  - " + notas / qtd);
+            float some = notas/qtd;
+            Console.WriteLine("Avarage Review for the movie:  - " + some);
             Console.WriteLine("===========================================");
 
 
