@@ -18,7 +18,6 @@ namespace MyApp
                     var values = line.Split(',');
                     data[i] = int.Parse(values[escolha]);
                 }
-                Console.WriteLine("foi");
 
 
             }
@@ -38,7 +37,6 @@ namespace MyApp
                     var values = line.Split(',');
                     data[i] = float.Parse(values[escolha]);
                 }
-                Console.WriteLine("foi");
 
 
             }
@@ -58,7 +56,6 @@ namespace MyApp
                     var values = line.Split(',');
                     data[i] = values[escolha];
                 }
-                Console.WriteLine("foi");
 
 
             }
@@ -70,7 +67,6 @@ namespace MyApp
         {
 
             long length = File.ReadLines(path).Count();
-            Console.WriteLine("Size: " + length);
             return length;
 
         }

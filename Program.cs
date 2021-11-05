@@ -9,17 +9,22 @@ namespace MyApp // Note: actual namespace depends on the project name.
         public static void Main(string[] args)
         {
             Bulkloader bulk = new Bulkloader();
+            //Call Path Files
             string path1 = @"input\ratingsF1.csv";
             string path2 = @"input\movies.csv";
+
+            // Get Data From CSV Files
+            Console.WriteLine("Loading Files..");
             int[] rMovieID = bulk.readFileInt(path1,1);
             float[] rating = bulk.readFileFloat(path1,2);
             int[] movieId = bulk.readFileInt(path2,0);
             int[] mlsec = bulk.readFileInt(path1,3);
             string[] title = bulk.readFileString(path2,1);
+            Console.WriteLine("Load Files Complete!");
             // string[] genres = bulk.readFileString(path2,2);
 
 
-            Console.WriteLine("Lendo Arquivos Aguarde..");
+            Console.WriteLine("Sorting Data..");
 
             // movieID = bulk.bubble(movieID);
             //bubble sort -------------------------------------------------------
@@ -49,12 +54,12 @@ namespace MyApp // Note: actual namespace depends on the project name.
                     }
                 }
             }
+            Console.WriteLine("Data Sorted Successfully!");
 
 
-            Console.WriteLine("Selecione o ID de um Filme:");
+            Console.WriteLine("Select Movie ID:");
             int escolha = int.Parse(Console.ReadLine());
-            Console.WriteLine("Filme: "+title[escolha]);
-            Console.WriteLine("escolha fora do loop"+escolha);
+            Console.WriteLine("Movie: "+title[escolha]);
             float notas = 0;
             int qtd =0;
             
@@ -64,23 +69,24 @@ namespace MyApp // Note: actual namespace depends on the project name.
                 escolha--;
             }
             int test = escolha;
-            Console.WriteLine("--------------------------------------------Escolha fora do lopp: "+escolha);
+
+            Console.WriteLine("Calc Reviews..");
             for (int i = 0; i < rMovieID.Length; i++)
             {
 
                 if (rMovieID[i] == movieId[test])
                 {
                     escolha = test;
-                    Console.WriteLine("escolha dentro do if: "+escolha);
                     notas+=rating[i];
                     qtd++;
                     
                 }
                 
             }
-            Console.WriteLine("Media de Notas Para o Filme: "+title[escolha]+" - "+notas/qtd);
-            Console.WriteLine("- "+rMovieID[145]);
-            Console.WriteLine("Title: "+title[0]);
+            Console.WriteLine(qtd+" Review Found");
+            Console.WriteLine("===========================================");
+            Console.WriteLine("Avarage Review for the movie:  - "+notas/qtd);
+            Console.WriteLine("===========================================");
 
 
             
