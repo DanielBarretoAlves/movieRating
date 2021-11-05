@@ -19,3 +19,9 @@ The Data used came from https://movielens.org/
 
 
 ![Path](https://github.com/DanielBarretoAlves/movieRating/blob/main/img/path.png?raw=true)
+
+* Choose your movie type the number of the ID
+* Confirme the movie
+* The Output is going to be displyed at the screen
+### The Output Example
+![output](https://github.com/DanielBarretoAlves/movieRating/blob/main/img/Captura%20de%20Tela%20(24).png?raw=true)
