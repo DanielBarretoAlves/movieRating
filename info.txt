@@ -56,3 +56,32 @@ Data Sorted Successfully! Best Scenario! | 00:00:55.7312614 Seconds!
 Calc Pior Cenario
 ********************************************
 Data Sorted Successfully! Worst Scenario! | 00:00:59.4830494 Seconds!
+
+
+
+
+test 3
+
+Loading Files..
+Load Files Complete! | 00:00:00.2294752 Seconds!
+Sorting Data..
+********************************************
+Calc Cenario Medio
+********************************************
+Data Sorted Successfully! | 00:00:53.5175837 Seconds!
+********************************************
+Calc Melhor Cenario
+********************************************
+Data Sorted Successfully! Best Scenario! | 00:00:54.5220182 Seconds!
+********************************************
+Calc Pior Cenario
+********************************************
+Data Sorted Successfully! Worst Scenario! | 00:01:00.5438457 Seconds!
+******************************************
+
+
+
+
+
+
+
