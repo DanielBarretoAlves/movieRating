@@ -1,24 +1,3 @@
-Loading Files..
-Load Files Complete! | 00:00:01.9280487 Seconds!
-Sorting Data..
-Data Sorted Successfully! | 00:00:53.4496031 Seconds!
-----------------------------------------------------------------------
-Data Sorted Successfully! Best Scenario! | 00:00:53.4496031 Seconds!
-----------------------------------------------------------------------
-
-
-
-
-
-Loading Files..
-Load Files Complete! | 00:00:00.2099228 Seconds!
-Sorting Data..
-Data Sorted Successfully! | 00:00:53.5419558 Seconds!
-Data Sorted Successfully! Best Scenario! | 00:00:54.5120376 Seconds!
-******************************************
-Select Movie ID:
-Ex: '5' Heat (1995)
-******************************************
 
 
 Teste - 1
@@ -109,3 +88,20 @@ Data Sorted Successfully! Worst Scenario! | 00:00:59.7506176 Seconds!
 
 
 test 5
+
+Loading Files..
+Load Files Complete! | 00:00:00.2323305 Seconds!
+Sorting Data..
+********************************************
+Calc Cenario Medio
+********************************************
+Data Sorted Successfully! | 00:00:54.8868615 Seconds!
+********************************************
+Calc Melhor Cenario
+********************************************
+Data Sorted Successfully! Best Scenario! | 00:00:55.1669617 Seconds!
+********************************************
+Calc Pior Cenario
+********************************************
+Data Sorted Successfully! Worst Scenario! | 00:00:59.8283768 Seconds!
+******************************************
