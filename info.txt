@@ -1,0 +1,107 @@
+
+
+Teste - 1
+
+Loading Files..
+Load Files Complete! | 00:00:00.2192614 Seconds!
+Sorting Data..
+********************************************
+Calc Cenario Medio
+********************************************
+Data Sorted Successfully! | 00:00:53.5246831 Seconds!
+********************************************
+Calc Melhor Cenario
+********************************************
+Data Sorted Successfully! Best Scenario! | 00:00:54.5333479 Seconds!
+********************************************
+Calc Pior Cenario
+********************************************
+Data Sorted Successfully! Worst Scenario! | 00:00:59.8793758 Seconds!
+
+
+
+test 2
+
+Sorting Data..
+********************************************
+Calc Cenario Medio
+********************************************
+Data Sorted Successfully! | 00:00:54.7137038 Seconds!
+********************************************
+Calc Melhor Cenario
+********************************************
+Data Sorted Successfully! Best Scenario! | 00:00:55.7312614 Seconds!
+********************************************
+Calc Pior Cenario
+********************************************
+Data Sorted Successfully! Worst Scenario! | 00:00:59.4830494 Seconds!
+
+
+
+
+test 3
+
+Loading Files..
+Load Files Complete! | 00:00:00.2294752 Seconds!
+Sorting Data..
+********************************************
+Calc Cenario Medio
+********************************************
+Data Sorted Successfully! | 00:00:53.5175837 Seconds!
+********************************************
+Calc Melhor Cenario
+********************************************
+Data Sorted Successfully! Best Scenario! | 00:00:54.5220182 Seconds!
+********************************************
+Calc Pior Cenario
+********************************************
+Data Sorted Successfully! Worst Scenario! | 00:01:00.5438457 Seconds!
+******************************************
+
+
+
+
+
+
+
+test 4
+
+Sorting Data..
+********************************************
+Calc Cenario Medio
+********************************************
+Data Sorted Successfully! | 00:00:54.6692260 Seconds!
+********************************************
+Calc Melhor Cenario
+********************************************
+Data Sorted Successfully! Best Scenario! | 00:00:55.2380551 Seconds!
+********************************************
+Calc Pior Cenario
+********************************************
+Data Sorted Successfully! Worst Scenario! | 00:00:59.7506176 Seconds!
+
+
+
+
+
+
+
+
+test 5
+
+Loading Files..
+Load Files Complete! | 00:00:00.2323305 Seconds!
+Sorting Data..
+********************************************
+Calc Cenario Medio
+********************************************
+Data Sorted Successfully! | 00:00:54.8868615 Seconds!
+********************************************
+Calc Melhor Cenario
+********************************************
+Data Sorted Successfully! Best Scenario! | 00:00:55.1669617 Seconds!
+********************************************
+Calc Pior Cenario
+********************************************
+Data Sorted Successfully! Worst Scenario! | 00:00:59.8283768 Seconds!
+******************************************

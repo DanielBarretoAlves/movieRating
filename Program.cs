@@ -66,7 +66,9 @@ namespace MyApp
             int min, aux;
             float auxRating;
             int auxmlSec;
-
+            Console.WriteLine("********************************************");
+            Console.WriteLine("Calc Cenario Medio");
+            Console.WriteLine("********************************************");
             for (int i = 0; i < rMovieID.Length - 1; i++)
             {
                 min = i;
@@ -92,6 +94,58 @@ namespace MyApp
             }
             stopwatch.Stop();
             Console.WriteLine("Data Sorted Successfully! | "+stopwatch.Elapsed+" Seconds!");
+            stopwatch.Restart();
+
+            int min2, aux2;
+            
+            Console.WriteLine("********************************************");
+            Console.WriteLine("Calc Melhor Cenario");
+            Console.WriteLine("********************************************");
+            for (int i = 0; i < rMovieID.Length - 1; i++)
+            {
+                min2 = i;
+
+                for (int j = i + 1; j < rMovieID.Length; j++)
+                    if (rMovieID[j] < rMovieID[min2])
+                        min2 = j;
+
+                if (min2 != i)
+                {
+                    aux2 = rMovieID[min2];
+                    rMovieID[min2] = rMovieID[i];
+                    rMovieID[i] = aux2;
+                
+                }
+            }
+            stopwatch.Stop();
+            Console.WriteLine("Data Sorted Successfully! Best Scenario! | "+stopwatch.Elapsed+" Seconds!");
+            Console.WriteLine("********************************************");
+            Console.WriteLine("Calc Pior Cenario");
+            Console.WriteLine("********************************************");
+            rMovieID = bulk.bubble(rMovieID);
+             stopwatch.Restart();
+
+            int min3, aux3;
+            
+
+            for (int i = 0; i < rMovieID.Length - 1; i++)
+            {
+                min3 = i;
+
+                for (int j = i + 1; j < rMovieID.Length; j++)
+                    if (rMovieID[j] < rMovieID[min3])
+                        min3 = j;
+
+                if (min3 != i)
+                {
+                    aux3 = rMovieID[min3];
+                    rMovieID[min3] = rMovieID[i];
+                    rMovieID[i] = aux3;
+                
+                }
+            }
+            stopwatch.Stop();
+            Console.WriteLine("Data Sorted Successfully! Worst Scenario! | "+stopwatch.Elapsed+" Seconds!");
 
 
 
@@ -132,4 +186,3 @@ namespace MyApp
         }
     }
 }
-

@@ -1,4 +1,6 @@
 using System.IO;
+using System.Linq;
+
 namespace MyApp
 {
     class Bulkloader
@@ -69,6 +71,26 @@ namespace MyApp
             long length = File.ReadLines(path).Count();
             return length;
 
+        }
+
+        public int[] bubble(int[] arrInt)
+        {
+            int n = arrInt.Length;
+            int temp = 0;
+            for (int i = 0; i < n; i++)
+            {
+                for (int v = 1; v < (n - i); v++)
+                {
+                    if (arrInt[v - 1] < arrInt[v])
+                    {
+                        temp = arrInt[v - 1];
+                        arrInt[v - 1] = arrInt[v];
+                        arrInt[v] = temp;
+                    }
+
+                }
+            }
+            return arrInt;
         }
 
 
